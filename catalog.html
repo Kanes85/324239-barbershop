@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Каталог</title>
 </head>
-<body>
+<body class="inner-page">
 
 <!-- HEADER -->
   <header class="main-header">
@@ -41,7 +41,7 @@
     <section class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
 
-      <form class="login-form" action="http://echo.htmlacademy.ru"
+      <form class="login-form" action="https://echo.htmlacademy.ru"
   		method="get">
         <fieldset>
           <legend>Производители:</legend>
@@ -70,7 +70,7 @@
             </li>
             <li class="filter-option">
               <input id="filter-murrays" class="visually-hidden filter-input
-                filter-input-checkbox" type="checkbox" name="murrays">
+                filter-input-checkbox" type="checkbox" name="murrays" disabled>
               <label for="filter-murrays">Murray's</label>
             </li>
             <li class="filter-option">
@@ -240,9 +240,11 @@
   		</p>
   		<div class="footer-social">
   			<b>Давайте дружить!</b>
-  			<a class="social-button" href="#">Вконтакте</a>
-  			<a class="social-button" href="#">Фейсбук</a>
-  			<a class="social-button" href="#">Инстаграм</a>
+        <ul>
+  				<li><a class="social-button" href="#">Вконтакте</a></li>
+  				<li><a class="social-button" href="#">Фейсбук</a></li>
+  				<li><a class="social-button" href="#">Инстаграм</a></li>
+  			</ul>
   		</div>
   		<p class="footer-copyright">
   			<b>Разработано:</b>
@@ -255,7 +257,7 @@
     <section class="modal modal-login">
   		<h2>Личный кабинет</h2>
   		<p> Введите свой логин и пароль</p>
-  		<form class="login-form" action="http://echo.htmlacademy.ru"
+  		<form class="login-form" action="https://echo.htmlacademy.ru"
   		method="post">
   			<p>
   				<label for="user-login" class="visually-hidden">Логин</label>
